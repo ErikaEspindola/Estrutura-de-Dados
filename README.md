@@ -1,5 +1,5 @@
 # Maratona de Programação
-Exercícios e materiais de para programação competitiva.
+Exercícios e materiais para programação competitiva.
 
 1. [Estrutura de Dados](https://github.com/ErikaEspindola/Maratona/tree/master/Estrutura%20de%20Dados)
 2. [Grafos](https://github.com/ErikaEspindola/Maratona/tree/master/Grafos)
