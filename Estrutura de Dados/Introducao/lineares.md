@@ -1,4 +1,4 @@
-# Estrutura de Dados Lineares
+# Estruturas de Dados Lineares
 
 De forma geral, são estruturas de dados nas quais elementos de um mesmo tipo de dado estão organizados de maneira sequencial. Existem
 diversas estruturas de dados lineares, nesse tópico falaremos das mais utilizadas em C++ para competições.
