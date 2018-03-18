@@ -84,3 +84,14 @@ Inserção no final | O(1)     | O(1)
 Remoção no final  | O(n)     | O(1)
 Inserção no início| O(1)     | O(1)
 Remoção no início | O(1)     | O(1)
+
+## Análise comparativa de complexidade
+
+Operações | Vetor estático | Lista | Fila | Pilha
+--------- | -------------  | ----- | ---- | -----
+Acesso    | O(1) | O(n) | O(n) | O(n) | O(n)
+Pesquisa  | O(n) | O(n) | O(1) | O(n) | O(n)
+Inserção  | O(n) | O(1) | O(1) | O(1) | O(1)
+Remoção   | O(n) | O(1) | O(n) | O(1) | O(1)
+
+Mais informações: [Big-O Cheat Sheet](http://bigocheatsheet.com/)
