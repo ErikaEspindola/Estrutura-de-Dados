@@ -8,4 +8,4 @@
   - [Pilha](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/lineares.md#pilha)
   - [Fila](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/lineares.md#fila)
   - [Análise comparativa de complexidade](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/lineares.md#an%C3%A1lise-comparativa-de-complexidade)
-- Estruturas de Dados Não-Lineares
+- [Estruturas de Dados Não Lineares](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md)
