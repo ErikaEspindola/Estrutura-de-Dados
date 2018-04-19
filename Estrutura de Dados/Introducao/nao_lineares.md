@@ -20,6 +20,19 @@
     ```
 
 ## Map
+  - O Map é um array generalizado que consiste em uma combinação de uma chave e um valor
+  - A chave normalmente é utilizada para ordenação e identificação de algum elemento
+  - São tipicamente implementados como Árvore Binária de Busca
+  
+  ### Declaração
+  ```c++
+  map <string, int> m; // declaração de um map com chave do tipo string e valor de tipo inteiro
+  ```
+  
+  ### Inserção
+  ```c++
+  m.insert(pair<string, int>("J", 1)); // inserção de um par onde a chave é uma string e o valor um inteiro 
+  ```  
 
 ## Heap
 
