@@ -33,8 +33,28 @@
   ```c++
   m.insert(pair<string, int>("J", 1)); // inserção de um par onde a chave é uma string e o valor um inteiro 
   ```  
+  ### Remoção
+  ```c++
+  it = m.find('b');
+  m.erase(it); // remove pelo iterator
+  ```  
+  ```c++
+  m.erase('c'); // remove pela chave
+  ```  
+  ```c++
+  it = m.find('e');
+  m.erase (it, m.end() ); // remove pelo range
+  ```  
+  ### Acesso à chave e aos valores
+  ```c++
+  for (auto x : m) {
+    cout << x.first << " " << x.second << "\n"; //imprime na tela todas as chaves e todos os valores do map
+  }
+  ``` 
 
 ## Heap
+- Heap é uma árvore como a Árvore Binária de Busca, mas ela deve ser completa
+
 
 ## Árvore Binária
 
