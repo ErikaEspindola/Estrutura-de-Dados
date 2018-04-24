@@ -52,11 +52,34 @@
   }
   ``` 
 
-## Heap
-- Heap é uma árvore como a Árvore Binária de Busca, mas ela deve ser completa
+## Fila de Prioridades
+  - É implementada a partir da estrutura [Heap](https://www.geeksforgeeks.org/binary-heap/)
+  - Por padrão, a fila de prioridades é ordenada em ordem decrescente
 
-
+  ### Declaração
+  ```c++
+  priority_queue<int> q; //define uma fila de prioridades de números inteiros
+  ``` 
+  
+  ### Inserção
+  Complexidade: O(log N)
+  ```c++
+  q.push(1); //insere o elemento 1 na fila
+  ``` 
+  
+  ### Remoção
+  Complexidade: O(log N)
+  ```c++
+  q.pop(); //remove o primeiro elemento da fila (que é o maior)
+  ``` 
+  
+  ### Acesso ao maior elemento
+  ```c++
+  q.top(); //retorna o maior elemento da fila
+  ``` 
+  
 ## Árvore Binária
+
 
 ## Grafos
 
