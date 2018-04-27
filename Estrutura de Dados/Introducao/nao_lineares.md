@@ -121,6 +121,10 @@ void unite(int a, int b) {
 ```
 
 ## Fenwick Tree
+- Vamos considerar o seguinte problema para entender Fenwick Tree:
+  - Temos um array com *N* elementos, devemos conseguir:
+    - Encontrar a soma dos primeiros *i* elementos
+    - Mudar o valor de um elemento específico do array
 
 ## Árvore Binária
 
