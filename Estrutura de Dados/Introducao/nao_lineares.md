@@ -64,13 +64,13 @@
   ``` 
   
   ### Inserção
-  Complexidade: O(*log* N)
+  Complexidade: O (*log* N)
   ```c++
   q.push(1); //insere o elemento 1 na fila
   ``` 
   
   ### Remoção
-  Complexidade: O(*log* N)
+  Complexidade: O (*log* N)
   ```c++
   q.pop(); //remove o primeiro elemento da fila (que é o maior)
   ``` 
@@ -92,7 +92,7 @@ for(int i = 1; i <= n; i++) size[i] = 1;
 ``` 
 
 - A função *find* retorna o elemento representativo de *x*
-- Complexidade: O(*log* N)
+- Complexidade: O (*log* N)
 ```c++
 int find(int x) {
   while (x != link[x]) x = link[x];
@@ -101,7 +101,7 @@ int find(int x) {
 ``` 
 
 - A função *same* verifica se os elementos *a* e *b* pertencem ao mesmo set
-- Complexidade: O(*log* N)
+- Complexidade: O (*log* N)
 ```c++
 bool same(int a, int b) {
   return find(a) == find(b);
@@ -109,7 +109,7 @@ bool same(int a, int b) {
 ```
 
 - A função *unite* une os sets que contêm os elementos *a* e *b*
-- Complexidade: O(*log* N)
+- Complexidade: O (*log* N)
 ```c++
 void unite(int a, int b) {
   a = find(a);
