@@ -4,20 +4,20 @@
   - O Set é um container que armazena elementos únicos ordenadamente.
   - O valor dos elementos não pode ser modificado, mas é possível inserir ou removê-los.
   
-    ### Declaração
-    ```c++
-    set <int> s; // declaração de um set de tipo inteiro
-    ```
-    ### Inserção
-    Complexidade: O (*log* N)
-    ```c++
-    s.insert(1); // inserção do número inteiro '1' no set
-    ```
-    ### Remoção
-    Complexidade: O (*log* N)
-    ```c++
-    s.erase(1); // remove o número inteiro '1' do set
-    ```
+  ### Declaração
+  ```c++
+  set <int> s; // declaração de um set de tipo inteiro
+  ```
+  ### Inserção
+  Complexidade: O (*log* N)
+  ```c++
+  s.insert(1); // inserção do número inteiro '1' no set
+  ```
+  ### Remoção
+  Complexidade: O (*log* N)
+  ```c++
+  s.erase(1); // remove o número inteiro '1' do set
+  ```
 
 ## Map
   - O Map é um array generalizado que consiste em uma combinação de uma chave e um valor
@@ -127,6 +127,7 @@ void unite(int a, int b) {
   - Mudar o valor de um elemento específico do array para um valor x
   
 - A função *build* define o nó folha com um elemento único, após isso, é aplicada recursividade para definir os filhos da direita e da esquerda, e então, o nó interno terá a soma dos dois filhos
+- Complexidade: O (N)
 ```c++
 void build(int node, int start, int end) {
     if(start == end) {
@@ -140,11 +141,11 @@ void build(int node, int start, int end) {
 }
 ```
 
-- A função *update*
+- A função *update* olha o intervalo no qual o elemento está presente e atualiza recursivamente de acordo com o filho da direita ou da esquerda
+- Complexidade: O (log N)
 ```c++
 void update(int node, int start, int end, int idx, int val) {
     if(start == end) {
-        // Nó folha
         A[idx] += val;
         tree[node] += val;
     } else {
@@ -158,6 +159,25 @@ void update(int node, int start, int end, int idx, int val) {
         }
         tree[node] = tree[2*node] + tree[2*node+1];
     }
+}
+```
+
+- A função *query*
+```c++
+int query(int node, int start, int end, int l, int r) {
+    if(r < start or end < l) {
+        // range represented by a node is completely outside the given range
+        return 0;
+    }
+    if(l <= start and end <= r) {
+        // range represented by a node is completely inside the given range
+        return tree[node];
+    }
+    // range represented by a node is partially inside and partially outside the given range
+    int mid = (start + end) / 2;
+    int p1 = query(2*node, start, mid, l, r);
+    int p2 = query(2*node+1, mid+1, end, l, r);
+    return (p1 + p2);
 }
 ```
 ## Fenwick Tree
