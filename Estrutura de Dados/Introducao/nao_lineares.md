@@ -119,15 +119,47 @@ void unite(int a, int b) {
   link[b] = a;
 }
 ```
+## Segment Tree
+- É basicamente uma árvore binária utilizada para armazenar intervalos ou segmentos.
+- Cada nó da árvore representa um intervalo
+- Com base nisso, é possível realizar as seguintes operações:
+  - Encontrar a soma dos elementos de índice l a r, onde 0 <= l <= r <= n-1
+  - Mudar o valor de um elemento específico do array para um valor x
+  
+- A função *build* define o nó folha com um elemento único, após isso, é aplicada recursividade para definir os filhos da direita e da esquerda, e então, o nó interno terá a soma dos dois filhos
+```c++
+void build(int node, int start, int end) {
+    if(start == end) {
+        tree[node] = A[start];
+    } else {
+        int mid = (start + end) / 2;
+        build(2*node, start, mid);
+        build(2*node+1, mid+1, end);
+        tree[node] = tree[2*node] + tree[2*node+1];
+    }
+}
+```
 
+- A função *update*
+```c++
+void update(int node, int start, int end, int idx, int val) {
+    if(start == end) {
+        // Nó folha
+        A[idx] += val;
+        tree[node] += val;
+    } else {
+        int mid = (start + end) / 2;
+        if(start <= idx and idx <= mid) {
+            // Se idx estiver no filho da esquerda, utilizamos a recursividade no filho da esquerda
+            update(2*node, start, mid, idx, val);
+        } else {
+            // Se idx estiver no filho da direita, utilizamos a recursividade no filho da direita
+            update(2*node+1, mid+1, end, idx, val);
+        }
+        tree[node] = tree[2*node] + tree[2*node+1];
+    }
+}
+```
 ## Fenwick Tree
 - Encontrar a soma dos primeiros *i* elementos
 - Mudar o valor de um elemento específico do array
-
-## Segment Tree
-- Encontrar a soma dos elementos de índice l a r, onde 0 <= l <= r <= n-1
-- Mudar o valor de um elemento específico do array para um valor x
-
-## Árvore Binária
-
-## Grafos
