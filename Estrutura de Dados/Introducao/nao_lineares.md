@@ -125,6 +125,7 @@ void unite(int a, int b) {
 - Com base nisso, é possível realizar as seguintes operações:
   - Encontrar a soma dos elementos de índice l a r, onde 0 <= l <= r <= n-1
   - Mudar o valor de um elemento específico do array para um valor x
+- Demonstração: [VisuAlgo](https://visualgo.net/en/segmenttree)
   
 - A função *build* define o nó folha com um elemento único, após isso, é aplicada recursividade para definir os filhos da direita e da esquerda, e então, o nó interno terá a soma dos dois filhos
 - Complexidade: O (N)
@@ -182,6 +183,8 @@ int query(int node, int start, int end, int l, int r) {
     return (p1 + p2);
 }
 ```
+
+
 ## Fenwick Tree
 - Encontrar a soma dos primeiros *i* elementos
 - Mudar o valor de um elemento específico do array
