@@ -188,3 +188,6 @@ int query(int node, int start, int end, int l, int r) {
 ## Fenwick Tree
 - Encontrar a soma dos primeiros *i* elementos
 - Mudar o valor de um elemento específico do array
+- Suporta duas operações com complexidade O(*log* N):
+  - Consultar a soma em um intervalo
+  - Atualizar um valor
