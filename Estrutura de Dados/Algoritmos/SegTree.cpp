@@ -6,7 +6,7 @@ int getSum(int BITree[], int index) {
   
 	index = index + 1;
 
-	while (index>0) {
+	while (index > 0) {
 		sum += BITree[index];
 		index -= index & (-index);
 	}
@@ -24,10 +24,10 @@ void updateBIT(int BITree[], int n, int index, int val) {
 
 int *constructBITree(int arr[], int n) {
 	int *BITree = new int[n+1];
-	for (int i=1; i<=n; i++)
+	for (int i = 1; i <= n; i++)
 		BITree[i] = 0;
 
-	for (int i=0; i<n; i++)
+	for (int i = 0; i < n; i++)
 		updateBIT(BITree, n, i, arr[i]);
 
 	return BITree;
@@ -41,7 +41,6 @@ int main() {
 	cout << "Sum of elements in arr[0..5] is "
 		   << getSum(BITree, 5);
 
-	// Testando a operação update
 	freq[3] += 6;
 	updateBIT(BITree, n, 3, 6); 
 
