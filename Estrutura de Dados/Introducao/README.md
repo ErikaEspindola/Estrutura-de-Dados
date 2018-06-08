@@ -16,5 +16,5 @@
   - [Árvore Binária](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#%C3%81rvore-bin%C3%A1ria)
   - [Grafos](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#grafos)
   - [Union Find](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#union-find)
-  - [Fenwick Tree](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#fenwick-tree)
   - [Segment Tree](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#segment-tree)
+  - [Fenwick Tree](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Introducao/nao_lineares.md#fenwick-tree)
