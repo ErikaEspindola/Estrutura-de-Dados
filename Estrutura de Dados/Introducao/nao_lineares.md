@@ -184,6 +184,8 @@ int query(int node, int start, int end, int l, int r) {
 }
 ```
 
+- Exemplo de código [aqui](https://github.com/ErikaEspindola/Maratona/blob/master/Estrutura%20de%20Dados/Algoritmos/SegTree.cpp)
+
 
 ## Fenwick Tree
 - Encontrar a soma dos primeiros *i* elementos
