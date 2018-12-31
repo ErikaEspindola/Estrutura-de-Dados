@@ -1,4 +1,5 @@
 # Estruturas de Dados Não Lineares
+Os dados são organizados em uma ordem classificada e existe um relacionamento entre os elementos.
 
 ## Set
   - O Set é um container que armazena elementos únicos ordenadamente.
